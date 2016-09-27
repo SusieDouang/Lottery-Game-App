@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" 
+    CodeBehind="Site2Column.master.cs"
+    Inherits="VelocityCoders.LotteryGame.Webforms.MasterPages.Site2Column" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body><center>
+    <form id="form1" runat="server">
+    <div>
+        <div id="Header">
+            <img src="../../Images/top-banner.jpg" />
+        </div>
+        <div id="Subheader">
+            <div class="Banner">
+                <h1 class="Banner-Text">Lottery Form</h1>
+                <p></p>
+                <br />
+            </div>
+         </div>
+        <div id="Container">
+            <div id="NavigationContainer">
+                <div id="NavigationContainerContent">Left Navigation Placeholder</div>
+                </div>
+            <div id="BodyContainer">
+                <div id="BodyContainerContent">
+                    <div id="LotteryContainer" class="BorderRadiusBottom">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+            </div>
+        </div>
+     </div>
+        <div id="Footer">
+        <div>Copyright 2016 - Velocity Coders</div>
+    </form>
+<body/><center/>
+<html/>
+    </div>
+    </form>
+</body>
+</html>

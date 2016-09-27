@@ -1,0 +1,172 @@
+﻿html
+{
+font-family:'Helvetica Neue', Helvetica, Verdana, Arial, sans-serif;
+font-size:14px;
+color:orange;
+}
+
+body 
+{
+    width:980px;
+    background-color:#f5f5f5;
+
+    margin-top:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#Header,
+#Footer
+{
+    width:100%;
+}
+
+#Header
+{
+    height:65px;
+    background-color:#ffffff;
+}
+
+#Footer
+{
+    position:fixed;
+    bottom:0;
+    left:0;
+
+    height:35px;
+    line-height:35px;
+    text-align:center;
+
+    border-top: 1px solid #ffc48a;
+    color:#eaeaea;
+    background-color:#fb9938;
+
+}
+#Subheader
+{
+    background-color: #ffffff;
+    background-image:url('/Images/background-banner.jpg');
+    background-repeat:no-repeat;
+    background-position:center top;
+
+    height:50px;
+}
+
+.Banner
+{
+    text-align:center;
+    width:100%; 
+    max-width:900px;
+    padding-top:63px; 
+}
+
+.Banner-Text,
+.Banner p{
+    text-shadow: 0 0px 1px rgba(0,0,0,0.4);
+    color: black;
+}
+
+#Container
+{
+    background-color:white;
+    position:absolute;
+    top:180px;
+    width:978px;
+    margin-bottom:50px
+}
+
+#NavigationContainer
+{
+    width:200px;
+    float:left;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+#NavigationContainerContent
+{
+    padding:6px;
+    background-color:#fff;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+#BodyContainer
+{
+    margin-left:20px;
+    margin-right:0px;
+}
+
+#LotteryContainer
+{
+    padding:0px;
+    background-color:#fff;
+    min-height:10px;
+}
+
+#LotteryContainerTable
+{
+    width:100%;
+}
+
+#LotteryContainer table label
+{
+    float: right;
+    padding-right:10px;
+}
+.PageMessage, 
+.BorderRadius, 
+.BorderRadiusAll, 
+.BorderRadiusBottom, 
+.BorderRadiusTop
+{
+    border: 1px solid #cccccc;
+
+    -moz-box-shadow: rgba(0, 0 ,0, 0.1) 0 0 2px 0px;
+    -webkit-box-shadow: rgba( 0, 0, 0, 0.1) 0 0 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 0;
+}
+
+.BorderRadiusAll
+{
+    -webkit-border-radius: 4px 4px 4px 4px; 
+    border-radius: 0px 0px 4px 4px;
+}
+.ContainerBar
+{
+    background: #f4f3f1;
+    border-bottom: 1px solid #e6e3e1;
+    border-top: 1px solid #e6e3e1;
+    line-height: 16px;
+    margin: 15px -20px 0;
+    overflow: hidden;
+    padding: 12px 20px;
+}
+
+.SubheaderNavigation ul
+{
+    margin: 0;
+    text-align:center;
+}
+
+.SubheaderNavigation li
+{
+    color:#808080;
+    display:inline;
+    padding:8px;
+}
+
+.SubheaderNavigation a
+{
+    color:#666666;
+}
+
+.SmallPadding
+{
+    padding:4px;
+}
+
+.TextCenter
+{
+    text-align:center;
+}
