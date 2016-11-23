@@ -7,27 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VelocityCoders.LotteryGame.Webforms.UserControls {
+namespace VelocityCoders.LotteryGame.Webforms.MasterPages {
     
     
-    public partial class DrawingNavigationControl {
+    public partial class Site2Column {
         
         /// <summary>
-        /// UC control.
+        /// head11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label UC;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder head11;
         
         /// <summary>
-        /// DrawingNavigationList control.
+        /// form11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView DrawingNavigationList;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form11;
+        
+        /// <summary>
+        /// ContentPlaceHolder11 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder11;
     }
 }

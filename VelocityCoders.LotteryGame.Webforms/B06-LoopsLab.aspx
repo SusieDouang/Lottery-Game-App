@@ -1,4 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="B06-LoopsLab.aspx.cs" Inherits="VelocityCoders.LotteryGame.Webforms.B06_LoopsLab" %>
+﻿<%@ Page Language="C#" 
+    AutoEventWireup="true" 
+    CodeBehind="B06-LoopsLab.aspx.cs" 
+    Inherits="VelocityCoders.LotteryGame.Webforms.B06_LoopsLab" %>
 
 <!DOCTYPE html>
 
@@ -15,5 +18,7 @@
            <asp:Label runat="server" ID="Loop4" /> </br>  
     </div>
     </form>
+
+
 </body>
 </html>

@@ -94,13 +94,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\BasicLottery\BasicDrawingForm.aspx" />
+    <Content Include="Admin\BasicLottery\BasicLotteryForm.aspx" />
+    <Content Include="Admin\BasicLottery\BasicWinningForm.aspx" />
+    <Content Include="Admin\BasicLottery\BasicWinningResults.aspx" />
+    <Content Include="Admin\Lottery\WinningNumberForm.aspx" />
     <Content Include="Admin\Lottery\LotteryDrawingForm.aspx" />
     <Content Include="App_Themes\Main\FormControls.css" />
+    <Content Include="App_Themes\Main2\Main2.css" />
     <Content Include="App_Themes\Main\Main.css" />
     <Content Include="B04-ArraysLab.aspx" />
     <Content Include="B05-ConditionalLab.aspx" />
     <Content Include="B06-LoopsLab.aspx" />
+    <Content Include="Error.aspx" />
     <Content Include="Hello World.aspx" />
+    <Content Include="Images\banner.jpg" />
+    <Content Include="Images\city.jpg" />
+    <Content Include="Images\lake.jpg" />
     <Content Include="Images\top-banner.jpg" />
     <Content Include="LabExcercises.aspx" />
     <Content Include="Admin\Lottery\LotteryForm.aspx" />
@@ -110,6 +120,7 @@
     </Content>
     <Content Include="B03-StringsLab.aspx" />
     <Content Include="MasterPages\Site2Column.Master" />
+    <Content Include="MasterPages\Basic2Column.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -120,11 +131,46 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="UserControls\DrawingNavigationControl.ascx" />
+    <Content Include="UserControls\BasicLotteryNavigationControl.ascx" />
     <Content Include="UserControls\LotteryNavigationControl.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\BasicLottery\BasicDrawingForm.aspx.cs">
+      <DependentUpon>BasicDrawingForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BasicLottery\BasicDrawingForm.aspx.designer.cs">
+      <DependentUpon>BasicDrawingForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BasicLottery\BasicLotteryForm.aspx.cs">
+      <DependentUpon>BasicLotteryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BasicLottery\BasicLotteryForm.aspx.designer.cs">
+      <DependentUpon>BasicLotteryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BasicLottery\BasicWinningForm.aspx.cs">
+      <DependentUpon>BasicWinningForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BasicLottery\BasicWinningForm.aspx.designer.cs">
+      <DependentUpon>BasicWinningForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BasicLottery\BasicWinningResults.aspx.cs">
+      <DependentUpon>BasicWinningResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BasicLottery\BasicWinningResults.aspx.designer.cs">
+      <DependentUpon>BasicWinningResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Lottery\WinningNumberForm.aspx.cs">
+      <DependentUpon>WinningNumberForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Lottery\WinningNumberForm.aspx.designer.cs">
+      <DependentUpon>WinningNumberForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Lottery\LotteryDrawingForm.aspx.cs">
       <DependentUpon>LotteryDrawingForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -156,8 +202,16 @@
     <Compile Include="Custom\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Enums\BasicLotteryNavigationEnum.cs" />
     <Compile Include="Enums\LotteryNavigationEnum.cs" />
     <Compile Include="Enums\DrawingNavigationEnum.cs" />
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Hello World.aspx.cs">
       <DependentUpon>Hello World.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -179,6 +233,13 @@
     <Compile Include="Admin\Lottery\LotteryForm.aspx.designer.cs">
       <DependentUpon>LotteryForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MasterPages\Basic2Column.Master.cs">
+      <DependentUpon>Basic2Column.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Basic2Column.Master.designer.cs">
+      <DependentUpon>Basic2Column.Master</DependentUpon>
+    </Compile>
     <Compile Include="MasterPages\Site2Column.Master.cs">
       <DependentUpon>Site2Column.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -194,12 +255,12 @@
     <Compile Include="B03-StringsLab.aspx.designer.cs">
       <DependentUpon>B03-StringsLab.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\DrawingNavigationControl.ascx.cs">
-      <DependentUpon>DrawingNavigationControl.ascx</DependentUpon>
+    <Compile Include="UserControls\BasicLotteryNavigationControl.ascx.cs">
+      <DependentUpon>BasicLotteryNavigationControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserControls\DrawingNavigationControl.ascx.designer.cs">
-      <DependentUpon>DrawingNavigationControl.ascx</DependentUpon>
+    <Compile Include="UserControls\BasicLotteryNavigationControl.ascx.designer.cs">
+      <DependentUpon>BasicLotteryNavigationControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\LotteryNavigationControl.ascx.cs">
       <DependentUpon>LotteryNavigationControl.ascx</DependentUpon>
@@ -218,10 +279,17 @@
       <Project>{517b5618-f19a-4768-9a3c-e08455cb4f43}</Project>
       <Name>VelocityCoders.LotteryGame.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\VelocityCoders.LotteryGame.DAL\VelocityCoders.LotteryGame.DAL.csproj">
+      <Project>{086f29b9-58bd-4cea-9ffd-6ed799b9ad12}</Project>
+      <Name>VelocityCoders.LotteryGame.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VelocityCoders.LotteryGame.Models\VelocityCoders.LotteryGame.Models.csproj">
       <Project>{0cb4a8f9-29c7-4344-9535-4b05726a6078}</Project>
       <Name>VelocityCoders.LotteryGame.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -18,7 +18,15 @@ namespace VelocityCoders.LotteryGame.Models.Enums
 
     GetItemLotteryName = 2,
 
-    GetCollection = 3
+    GetItemLotteryNameCollection = 3,
+
+    GetCollection = 4,
+
+    GetLotteryId = 5,
+
+    GetResults = 6
+
+
 
     }
 }

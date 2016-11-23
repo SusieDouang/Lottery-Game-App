@@ -7,16 +7,19 @@ namespace VelocityCoders.LotteryGame.Models.Enums
         None = 0,
 
         //Gets a single item from the database
-        GetDate = 1,
+        GetItem = 1,
 
         //Gets a single item from the database filtered by name
-        GetItemOrderByDate = 2,
+        GetItemLotteryName = 2,
 
         //Gets a collection of items from the database
-        GetLotteryGameNumbers = 3,
+        GetItemLotteryNameCollection = 3,
 
-        //Gets a collection of filtered by EmployeeId
+        //Gets a collection of filtered by Id
         GetCollection = 4,
+
+        //Gets Item - LotteryId
+        GetLotteryId = 5
 
     }
 }

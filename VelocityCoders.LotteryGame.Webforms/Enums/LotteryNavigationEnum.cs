@@ -5,11 +5,12 @@
 
         LotteryDrawingForm = 10, 
 
-        LotteryForm = 20, 
+        LotteryForm = 20,
 
-        State = 30, 
+        WinningNumberForm = 30,
 
-        BallType = 40, 
+        //State = 30, 
 
-
+        //BallType = 40, 
     }
+

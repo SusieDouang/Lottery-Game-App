@@ -14,9 +14,9 @@ namespace VelocityCoders.LotteryGame.BLL
     {
         #region GET ITEM
 
-        public static Lottery GetItem()
+        public static Lottery GetItem(int lotteryId)
         {
-            return new Lottery();
+            return LotteryDAL.GetItem(lotteryId);
         }
 
         #endregion
@@ -39,9 +39,14 @@ namespace VelocityCoders.LotteryGame.BLL
 
             return returnValue;
         }
-
         #endregion
 
-
+        #region DELETE
+        public static bool Delete(int lotteryId)
+        {
+            //notes: call DAL to delete lottery record
+            return LotteryDAL.Delete(lotteryId);
+        }
+        #endregion
     }
 }

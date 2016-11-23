@@ -5,14 +5,14 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+    <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-</head>
-<body><center>
+    </head>
+
+    <body><center>
     <form id="form1" runat="server">
-    <div>
         <div id="Header">
             <img src="../../Images/top-banner.jpg" />
         </div>
@@ -37,10 +37,7 @@
      </div>
         <div id="Footer">
         <div>Copyright 2016 - Velocity Coders</div>
+        </div>
     </form>
-<body/><center/>
-<html/>
-    </div>
-    </form>
-</body>
+    </center></body>
 </html>

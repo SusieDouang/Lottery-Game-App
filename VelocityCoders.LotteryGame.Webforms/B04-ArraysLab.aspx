@@ -8,8 +8,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div></div><asp:Label runat="server" ID="array1" /> </br>   
-    <div><asp:Label runat="server" ID="array2" /> </br>   
+    <div></div><asp:Label runat="server" ID="array1" />    
+    <div><asp:Label runat="server" ID="array2" />  
     </div>
     </form>
 </body>

@@ -19,6 +19,8 @@ namespace VelocityCoders.LotteryGame.Webforms.UserControls
         public LotteryNavigation CurrentNavigationLink { get; set; }
 
         public int LotteryId { get; set; }
+        public int DrawingId { get; set; }
+        public int WinningNumberId { get; set; }
 
         #endregion
 
@@ -31,31 +33,54 @@ namespace VelocityCoders.LotteryGame.Webforms.UserControls
             Array navigationValues = Enum.GetValues(typeof(LotteryNavigation));
 
             string lotteryIdQueryString = "LotteryId=" + this.LotteryId.ToString();
-            
+            string drawingIdQueryString = "DrawingId=" + this.DrawingId.ToString();
+            string winningNumberIdQueryString = "LotteryId=" + this.LotteryId.ToString();
+
             if (this.LotteryId > 0)
             {
                 foreach (LotteryNavigation item in navigationValues)
                 {
-                    if (item !=LotteryNavigation.None)
+                    if (item != LotteryNavigation.None)
                     {
                         string displayValue = item.ToString();
 
-                        if (item == this.CurrentNavigationLink)
-                            navigationList.Add(new ListItem { Text = displayValue, Value = "", Enabled = false });
-                        else
+                        if (item == LotteryNavigation.LotteryForm)
+                        {
                             navigationList.Add(new ListItem
                             {
                                 Text = displayValue,
-                                Value = "~/Admin/Lottery" + item.ToString() + ".aspx?" + lotteryIdQueryString,
-                                Enabled = true});
+                                Value = "~/Admin/Lottery/" + displayValue.ToString() + ".aspx?" + lotteryIdQueryString,
+                                Enabled = true
+                            });
+                        }
+                        
+                        else if (item == LotteryNavigation.LotteryDrawingForm)
+                        {
+                            navigationList.Add(new ListItem
+                            {
+                                Text = displayValue,
+                                Value = "~/Admin/Lottery/" + displayValue.ToString() + ".aspx?" + drawingIdQueryString,
+                                Enabled = true
+                            });
+                        }
 
-                        LotteryNavigationList.DataSource = navigationList;
-                        LotteryNavigationList.DataBind();
-                    }
-                    
+                        if (item == LotteryNavigation.WinningNumberForm)
+                        {
+                            navigationList.Add(new ListItem
+                            {
+                                Text = displayValue,
+                                Value = "~/Admin/Lottery/" + displayValue.ToString() + ".aspx?" + winningNumberIdQueryString,
+                                Enabled = true
+                            });
 
+                            //else
+                            //navigationList.Add(new ListItem { Text = displayValue, Value = "", Enabled = false });
+                        }
+                    }                    
                 }
-            } 
+                LotteryNavigationList.DataSource = navigationList;
+                LotteryNavigationList.DataBind();
+            }
         }
         #endregion
 

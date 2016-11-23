@@ -40,13 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BallTypeBLL.cs" />
-    <Compile Include="DrawingBLL.cs" />
-    <Compile Include="LotteryBLL.cs" />
-    <Compile Include="MatchWinOddBLL.cs" />
+    <Compile Include="BasicBLL\BasicBallTypeBLL.cs" />
+    <Compile Include="BasicBLL\BasicDrawingBLL.cs" />
+    <Compile Include="BasicBLL\BasicLotteryBLL.cs" />
+    <Compile Include="BasicBLL\BasicWinningBLL.cs" />
+    <Compile Include="BLL\BallTypeBLL.cs" />
+    <Compile Include="BLL\DrawingBLL.cs" />
+    <Compile Include="BLL\LotteryBLL.cs" />
+    <Compile Include="BLL\MatchWinOddBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BLL\WinningNumberBLL.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Susie.Common\Susie.Common.csproj">
+      <Project>{646de31e-ecea-48c9-a970-f2d44e2dacac}</Project>
+      <Name>Susie.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VelocityCoders.LotteryGame.DAL\VelocityCoders.LotteryGame.DAL.csproj">
       <Project>{086f29b9-58bd-4cea-9ffd-6ed799b9ad12}</Project>
       <Name>VelocityCoders.LotteryGame.DAL</Name>
@@ -56,6 +65,7 @@
       <Name>VelocityCoders.LotteryGame.Models</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

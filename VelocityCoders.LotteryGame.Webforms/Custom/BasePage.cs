@@ -10,31 +10,11 @@ namespace VelocityCoders.LotteryGame.Webforms
 {
     public class BasePage : System.Web.UI.Page
     {
-        
         ///<summary>
         /// Gets Id from DrawingId QueryString. If not found, returns 0.
         ///</summary>
-        
-         public int DrawingId
-        {
-            get
-            {
-                return this.GetQueryStringNumber("DrawingId");
-            }
-        }
 
-        public int LotteryId
-        {
-            get
-            {
-                return this.GetQueryStringNumber("LotteryId");
-            }
-        }
-        
-        #region
-
-        #endregion
-
+        #region GET QUERY STRING NUMBER
 
         ///<summary>
         /// Attemp to retrieve a numeric value from the querystring.
@@ -56,5 +36,76 @@ namespace VelocityCoders.LotteryGame.Webforms
                 return Request.QueryString[queryStringName].ToInt();
             }
         }
+        #endregion
+
+        #region GET QUERY STRING NUMBER - DRAWING ID
+        public int DrawingId
+        {
+            get
+            {
+                return this.GetQueryStringNumber("DrawingId");
+            }
+        }
+        #endregion
+
+        #region GET QUERY STRING NUMBER - LOTTERY ID
+        public int LotteryId
+        {
+            get
+            {
+                return this.GetQueryStringNumber("LotteryId");
+            }
+        }
+        #endregion
+
+        #region GET QUERY STRING NUMBER - WINNING NUMBER ID
+
+        public int WinningNumberId
+        {
+            get
+            {
+                return this.GetQueryStringNumber("WinningNumberId");
+            }
+        }
+
+        #endregion
+
+        #region GET QUERY STRING - BALL TYPE ID
+
+        public int BallTypeId
+        {
+            get
+            {
+                return this.GetQueryStringNumber("BallTypeId");
+            }
+        } 
+
+        #endregion
+
+
+        ///<summary>
+        /// Pass in the <asp:Label> control to set its text property. Set isAppend to true if you want the message to be concatenated.
+        /// </summary>
+        /// <param name="labelControl"></param>
+        /// <param name="messageToDisplay"/</param>
+        /// <param name="isAppend"></param>
+
+        #region DISPLAY PAGE MESSAGE CONTROL
+
+        public void DisplayPageMessage(Label labelControl, string messageToDisplay)
+        {
+            this.DisplayPageMessage(labelControl, messageToDisplay, false);
+        }
+
+        public void DisplayPageMessage(Label labelControl, string messageToDisplay, bool isAppend)
+        {
+            if (isAppend)
+                labelControl.Text = messageToDisplay;
+            else
+                labelControl.Text = messageToDisplay;
+        }
+
+        #endregion
     }
+
 }

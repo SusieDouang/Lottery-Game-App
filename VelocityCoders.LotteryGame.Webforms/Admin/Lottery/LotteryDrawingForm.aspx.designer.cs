@@ -31,13 +31,49 @@ namespace VelocityCoders.LotteryGame.Webforms.Admin.Lottery {
         protected global::System.Web.UI.WebControls.HiddenField hidLotteryId;
         
         /// <summary>
-        /// drawingNavigation control.
+        /// lotteryNavigation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::VelocityCoders.LotteryGame.Webforms.UserControls.DrawingNavigationControl drawingNavigation;
+        protected global::VelocityCoders.LotteryGame.Webforms.UserControls.LotteryNavigationControl lotteryNavigation;
+        
+        /// <summary>
+        /// PageMessageArea control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PageMessageArea;
+        
+        /// <summary>
+        /// lblPageMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPageMessage;
+        
+        /// <summary>
+        /// MessageList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView MessageList;
+        
+        /// <summary>
+        /// messageToDisplay control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label messageToDisplay;
         
         /// <summary>
         /// lblFormMessage control.
@@ -58,13 +94,13 @@ namespace VelocityCoders.LotteryGame.Webforms.Admin.Lottery {
         protected global::System.Web.UI.WebControls.DropDownList drpGameNameDraw;
         
         /// <summary>
-        /// drpDrawingDate control.
+        /// txtDrawingDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drpDrawingDate;
+        protected global::System.Web.UI.WebControls.TextBox txtDrawingDate;
         
         /// <summary>
         /// txtJackpotAmount control.
@@ -74,6 +110,15 @@ namespace VelocityCoders.LotteryGame.Webforms.Admin.Lottery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtJackpotAmount;
+        
+        /// <summary>
+        /// txtNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtNumber;
         
         /// <summary>
         /// btnSave control.
@@ -92,5 +137,23 @@ namespace VelocityCoders.LotteryGame.Webforms.Admin.Lottery {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCancel;
+        
+        /// <summary>
+        /// btnDelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDelete;
+        
+        /// <summary>
+        /// rptLotteryDrawing control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptLotteryDrawing;
     }
 }

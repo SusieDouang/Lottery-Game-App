@@ -22,6 +22,12 @@ namespace VelocityCoders.LotteryGame.Models.Enums
 
         GetCollection = 4,
 
-        GetDrawing = 5
+        GetDrawing = 5,
+
+        GetLotteryId = 6,
+
+        GetItem = 7,
+
+        GetItemNumber = 8
     }
 }

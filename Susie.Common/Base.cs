@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Susie.Common
 {
-    public class Base<T>
+    public class Base
     {
-        public T Id { get; set; }
+        //public T Id { get; set; }
+        public string Description { get; set;}
     }
 }

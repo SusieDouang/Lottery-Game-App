@@ -26,7 +26,7 @@ namespace VelocityCoders.LotteryGame.Webforms
             #region FOR LOOP
             for (int x = 0; x <= 8; x++)
 
-                sb.Append("Loop Iteration: " + x.ToString() + "<br>");
+                sb.Append(x.ToString() + " ");
 
             Loop1.Text = sb.ToString();
 

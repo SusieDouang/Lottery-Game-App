@@ -15,8 +15,9 @@
                 
     <div id="LotteryContainer" class="BorderRadiusBottom">
         <CustomVelocityCoders:LotteryNavigation runat="server" ID="lotteryNavigation" />
-                <asp:Label runat="server" ID="Label1"/>
-            </div>
+        <asp:Label runat="server" ID="Label1"/>
+    </div>
+        <asp:Label runat="server" ID="messageToDisplay" EnableViewState="true" />
         <br />
         <br />
 Current Date: <asp:Label runat="server" ID="lblFormMessage" EnableViewState="true" />
@@ -24,6 +25,7 @@ Current Date: <asp:Label runat="server" ID="lblFormMessage" EnableViewState="tru
 Current Time: <% Response.Write(DateTime.Now.ToShortTimeString()); %>
         <br />
         <br />
+
         <table>
             <tr>
                 <td><label>Lottery Name:</label></td>
@@ -32,22 +34,36 @@ Current Time: <% Response.Write(DateTime.Now.ToShortTimeString()); %>
                     </asp:DropDownList>
                </td>
             </tr>
+
             <tr>
                 <td><label>Lottery Name Abbreviation:</label></td>
-                <td><asp:TextBox runat="server" ID="txtLotteryNameAbbreviation" MaxLength="50" /></td></asp>
+                <td>
+                    <asp:TextBox runat="server" ID="txtLotteryNameAbbreviation" MaxLength="50" />
+                </td>
             </tr>         
             <tr>
                 <td><label>How to Play:</label></td>
-                <td><asp:TextBox runat="server" ID="txtHowToPlay" MaxLength="50" /></td></asp>
-            </tr>   
+                <td>
+                    <asp:TextBox runat="server" ID="txtHowToPlay" MaxLength="50" />
+                </td>
+            </tr>  
+             
             <tr>
                 <td><label>Description:</label></td>
-                <td><asp:TextBox runat="server" ID="txtDescription" MaxLength="50" /></td></asp>
+                <td>
+                    <asp:TextBox runat="server" ID="txtDescription" MaxLength="50" />
+                </td>
             </tr>
         </table>
         <br />
         <br />
-        <asp:Button runat="server" Text="Save" OnClick="Save_Click" />
+    <div class="ContainerBar">
+        <asp:Button runat="server" Text="Update Lottery Form" OnClick="Save_Click" ID="btnSave" />
+        <asp:Button runat="server" Text="Cancel" OnClick="Cancel_Click" ID="btnCancel" /><br /><br />
+        <span class="FloatRight">
+            <asp:Button runat="server" Text="Delete" ID="btnDelete" OnClick="Delete_Click" Visible="false" />
+        </span>
+    </div>
         <br />
         <br />
 </asp:Content>
